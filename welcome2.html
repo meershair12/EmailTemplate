@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to Telehealth Scheduler</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f9;">
+  
+  <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f4f7f9;">
+    <tr>
+      <td align="center" style="padding: 40px 20px;">
+        
+        <!-- Main Container -->
+        <table width="600" cellpadding="0" cellspacing="0" border="0" style="max-width: 600px; background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+          
+          <!-- Header with Logo -->
+          <tr>
+            <td style="padding: 40px 40px 30px 40px; text-align: center; background: #00357a; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+              <!-- Personic Health Logo -->
+              <!-- <img src="https://personichealth.com/wp-content/uploads/2024/04/Personic-Health-logo.png" alt="Personic Health Logo" style="max-width: 180px; height: auto; display: block; margin: 0 auto 20px auto;" /> -->
+              <img src="https://personichealth.com/wp-content/uploads/2024/05/Personic-Health-logo-light.png" alt="Personic Health Logo" style="max-width: 180px; height: auto; display: block; margin: 0 auto 20px auto;" />
+              <h1 style="margin: 0 0 10px 0; font-size: 28px; font-weight: 600; color: #ffffff;">Welcome to Telehealth Scheduler!</h1>
+            
+            </td>
+          </tr>
+
+          <!-- Content -->
+          <tr>
+            <td style="padding: 40px 40px 30px 40px;">
+              <p style="margin: 0 0 20px 0; font-size: 16px; color: #1a1a1a; line-height: 24px;">
+                Dear <strong>${user.firstName} ${user.lastName}</strong>,
+              </p>
+              
+              <p style="margin: 0 0 30px 0; font-size: 15px; color: #4b5563; line-height: 24px;">
+                Welcome to Telehealth Scheduler by Personic Health! It's designed to streamline the process of scheduling telehealth appointments based on the real-time availability of the Telehealth doctors.
+              </p>
+
+              <!-- Account Setup Box -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 30px 0;">
+                <tr>
+                  <td style="padding: 25px; background-color: #f0fdf4; border: 2px solid #059669; border-radius: 8px;">
+                    <p style="margin: 0 0 15px 0; font-size: 16px; color: #047857; font-weight: 600;">
+                      🔐 Please accept the invitation
+                    </p>
+                    <p style="margin: 0 0 20px 0; font-size: 14px; color: #065f46; line-height: 22px;">
+                      To access your account, please accept the invitation button below.
+                    </p>
+                    
+                    <!-- Setup Button -->
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td align="center" style="padding-top: 10px;">
+                          <a href="${setupLink}" style="display: inline-block; padding: 16px 40px; background-color: #059669; color: #ffffff; text-decoration: none; border-radius: 6px; font-size: 16px; font-weight: 600;">
+                            Accept Invitation
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+              
+
+              <!-- Security Notice -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 25px 0;">
+                <tr>
+                  <td style="padding: 20px; background-color: #fef3c7; border-left: 4px solid #f59e0b; border-radius: 4px;">
+                    <p style="margin: 0; font-size: 14px; color: #92400e; line-height: 20px;">
+                      <strong>⚠️ </strong> This setup link will expire in 24 hours. 
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Features Grid -->
+              <table width="100%" cellpadding="0" cellspacing="0" border="0" style="margin: 30px 0;">
+                <tr>
+                  <td>
+                    <p style="margin: 0 0 20px 0; font-size: 16px; color: #1a1a1a; font-weight: 600; text-align: center;">
+                      Key Features
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <table width="100%" cellpadding="0" cellspacing="0" border="0" style="font-family: Arial, sans-serif;">
+  <tr>
+    <td width="50%" style="padding: 15px; vertical-align: top;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #ecfdf5; border-radius: 8px; padding: 20px; height: 160px;">
+        <tr>
+          <td style="text-align: center;">
+            <div style="font-size: 28px; margin-bottom: 10px;">📅</div>
+            <div style="font-size: 15px; color: #047857; font-weight: 700; margin-bottom: 6px;">Easy Scheduling</div>
+            <div style="font-size: 13px; color: #64748b;">Quickly book appointments with just a few clicks—no hassle, no waiting.</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="50%" style="padding: 15px; vertical-align: top;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #f0fdf4; border-radius: 8px; padding: 20px; height: 160px;">
+        <tr>
+          <td style="text-align: center;">
+            <div style="font-size: 28px; margin-bottom: 10px;">🔒</div>
+            <div style="font-size: 15px; color: #15803d; font-weight: 700; margin-bottom: 6px;">Real-Time Availability</div>
+            <div style="font-size: 13px; color: #64748b;">View up-to-date schedules and find the best time that works for you.</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" style="padding: 15px; vertical-align: top;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #d1fae5; border-radius: 8px; padding: 20px; height: 160px;">
+        <tr>
+          <td style="text-align: center;">
+            <div style="font-size: 28px; margin-bottom: 10px;">📊</div>
+            <div style="font-size: 15px; color: #065f46; font-weight: 700; margin-bottom: 6px;">User-Friendly Dashboard</div>
+            <div style="font-size: 13px; color: #64748b;">Easily track your progress and manage everything in one clean view.</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td width="50%" style="padding: 15px; vertical-align: top;">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0" style="background-color: #a7f3d0; border-radius: 8px; padding: 20px; height: 160px;">
+        <tr>
+          <td style="text-align: center;">
+            <div style="font-size: 28px; margin-bottom: 10px;">💬</div>
+            <div style="font-size: 15px; color: #064e3b; font-weight: 700; margin-bottom: 6px;">24/7 Live Support</div>
+            <div style="font-size: 13px; color: #64748b;">Get instant help anytime—our team is always ready to assist you.</div>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+
+                  </td>
+                </tr>
+              </table>
+
+             
+          
+            </td>
+          </tr>
+
+          <!-- Divider -->
+          <tr>
+            <td style="padding: 0 40px;">
+              <div style="border-top: 1px solid #e5e7eb;"></div>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="padding: 30px 40px 40px 40px;">
+              
+              <p style="margin: 25px 0 10px 0; font-size: 12px; color: #9ca3af; line-height: 18px;">
+                Need help? Contact us at <a href="mailto:support@personichealth.com" style="color: #059669; text-decoration: none;">support@personichealth.com</a>
+              </p>
+              <p style="margin: 10px 0 0 0; font-size: 12px; color: #9ca3af; line-height: 18px;">
+                © ${new Date().getFullYear()} Personic Health. All rights reserved.
+              </p>
+              
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>
